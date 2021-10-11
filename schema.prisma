@@ -1,0 +1,25 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+//  url = "mysql://root:root@localhost:3306/mediahills"
+//  url = "mysql://root:root@localhost:3306/mediahills"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Otr {
+  id        Int      @id @default(autoincrement())
+  geoID     Int
+  tvID      Int
+  mh_city_id_timeshift     Int
+  @@map("otr_map")
+}
+
+model sendResult {
+  id        Int      @id @default(autoincrement())
+  city_id    Int
+  date      DateTime
+  @@map("send_result")
+}
