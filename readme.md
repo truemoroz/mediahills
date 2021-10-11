@@ -1,16 +1,16 @@
 # Запуск
 
-##Prerequriments
+## Prerequriments
 `npm install`
 
 `prisma generate`
 
 `cp .env.example .env`
 
-##Run
+## Run
 `node index.js`
 
-#Задание
+# Задание
 
 Необходимо обработать данные из БД по описанному алгоритму.
 Язык разработки - nodejs
